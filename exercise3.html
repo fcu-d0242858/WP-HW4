@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+       var img =$("img");
+       img.animate({left:'500px'},"slow");
+       img.animate({height: '300px', opacity: '0.8'}, "slow");
+       img.animate({width: '300px', opacity: '1'}, "slow");
+       img.animate({height: '100px', opacity: '0.8'}, "slow");
+       img.animate({width: '100px', opacity: '1'}, "slow");
+       img.animate({height:'500px',width:'500px'});
+     
+    });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button></br>
+
+<img src="http://cclab.ocu.edu.tw/w28/EcWeb/photo/666.jpg" style="width:100px;height:100px;position:absolute">
+</img>
+
+
+</body>
+</html>
